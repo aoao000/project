@@ -1,0 +1,99 @@
+*{
+/*   border:solid 1px red; */
+  margin:0px;
+  padding:0px;
+}
+.bg{
+  background-color:#DDDDDD;
+}
+h1{
+  text-align:center;
+  padding:100px;
+  padding-bottom:50px;
+  animation-duration:4s;
+  animation-iteration-count:1;
+  animation-name:fadeout;
+  background-color:rgba(245,169,98,1);
+}
+@keyframes fadeout{
+  0%{
+    padding-top:370px;
+    padding-bottom:370px;
+    background-color:rgba(245, 169, 98,0.1);
+  }
+  50%{
+    padding-top:370px;
+    padding-bottom:370px;
+    background-color:rgba(245, 169, 98,0.1);
+  }
+  100%{
+    padding-bottom:50px;
+    background-color:rgba(245, 169, 98,1);
+  }
+}
+.text{
+  padding-left:20px;
+}
+img{
+  padding:20px;
+}
+.card-text{
+  text-align:center;
+  color:black;
+  font-weight:900;
+}
+
+#moreinformation{
+  width:auto;
+  text-align:center;
+  font-size:40px;
+  transition:1s;
+  transform-origin:bottom top;
+  transform:scaleX(1);
+}
+#moreinformation:hover{
+  background-color:red;
+  border-radius:500px;
+  cursor:pointer;
+}
+
+
+#other{
+  display:none;
+}
+
+
+/* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;
+}

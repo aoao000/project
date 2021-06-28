@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* Pretend page styles */
+body1 {
+  background-color: #0a1931;
+}
+
+h1,
+p {
+  margin: 20px;
+  width: 90%;
+  color: #3d3d3d;
+}
+
+p {
+  color: #7d7d7d;
+}
+
+h3,
+p {
+  margin: 20px;
+  width: 90%;
+  color: #3d3d3d;
+}
+
+p {
+  color: #7d7d7d;
+}
+
+.someElement1 {
+  width: 90%;
+  height: 400px;
+  margin: 20px;
+  clear: both;
+  float: left;
+}
+
+.someElement1 img {
+  min-height: 400px;
+  min-width: 711px;
+}
+
+.someElement2 {
+  width: 42%;
+  height: 400px;
+  margin: 20px;
+  float: left;
+}
+
+.someElement3 {
+  width: 28%;
+  height: 400px;
+  margin: 20px;
+  float: left;
+}
+
+.someElement4 {
+  width: 28%;
+  height: 400px;
+  margin: 20px;
+  float: left;
+}
+
+.someElement0 {
+  width: 40%;
+  height: 400px;
+  margin: 20px;
+  float: left;
+  background-color: #efefef;
+}
+
+.someElementword {
+  width: 40%;
+  height: 150px;
+  margin: 20px;
+  float: left;
+}
+
+.someElementtitle {
+  font-family: 微軟正黑體;
+  width: 100%;
+  height: 250px;
+  margin: 20px;
+  float: left;
+  font-size: 200px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Component styles below */
+.beforeAfter {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.beforeAfter.responsiveWidth img {
+  width: 100%;
+  cursor: crosshair;
+}
+
+.beforeAfter.responsiveHeight img {
+  height: 150%;
+  cursor: crosshair;
+}
+
+.beforeAfter .teaser {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  z-index: 3;
+}
+
+.beforeAfter h2,
+.beforeAfter p {
+  color: #ffffff;
+  font-size: 14pt;
+  margin: 5px;
+  padding: 5px;
+}
+
+.beforeAfter p {
+  bottom: 0;
+  color: #eeeeee;
+  font-size: 10pt;
+  margin: 3px 5px;
+}
+
+.beforeAfter .before,
+.beforeAfter .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.beforeAfter .before {
+  z-index: 2;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.beforeAfter .before:hover,
+.before.active {
+  opacity: 0;
+}
+
+.beforeAfter .after {
+  z-index: 1;
+}
+
+.p1 {
+  color: black;
+}
+
+.p0 {
+  color: black;
+}
+
+.toTop-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+
+.toTop-arrow::before,
+.toTop-arrow::after {
+  width: 18px;
+  height: 5px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem;
+}
+
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem;
+}
+
+.toTop-arrow:focus {
+  outline: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+a:visited {
+  color: #3c8dad;
+  background-color: red;
+}
+
+a:hover {
+  color: #fafafa;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+  background-color: gray;
+  color: #fafafa;
+}
